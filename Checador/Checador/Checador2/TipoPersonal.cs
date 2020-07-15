@@ -122,5 +122,10 @@ namespace Checador2
             BtnGuardar.Visible = true;
             BtnGuardar.Enabled = true;
         }
+
+        private void Datos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

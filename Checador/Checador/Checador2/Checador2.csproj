@@ -150,5 +150,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-eliminar-propiedad-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categorizar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-usuario-masculino-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

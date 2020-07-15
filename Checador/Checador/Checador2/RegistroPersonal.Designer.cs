@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TxtFecha = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.BtnAct = new System.Windows.Forms.Button();
+            this.BtnGuardar = new System.Windows.Forms.Button();
             this.Datos = new System.Windows.Forms.DataGridView();
             this.CmbTp = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -41,12 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnEliminar = new System.Windows.Forms.Button();
-            this.BtnAct = new System.Windows.Forms.Button();
-            this.BtnGuardar = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TxtFecha = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Datos)).BeginInit();
             this.SuspendLayout();
@@ -74,24 +74,122 @@
             this.panel1.Controls.Add(this.TxtNombre);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1121, 768);
+            this.panel1.Size = new System.Drawing.Size(1120, 768);
             this.panel1.TabIndex = 1;
+            // 
+            // TxtFecha
+            // 
+            this.TxtFecha.Location = new System.Drawing.Point(788, 190);
+            this.TxtFecha.Name = "TxtFecha";
+            this.TxtFecha.Size = new System.Drawing.Size(247, 20);
+            this.TxtFecha.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.DarkRed;
+            this.label7.Location = new System.Drawing.Point(591, 184);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 27);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Fecha";
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnCancelar.FlatAppearance.BorderSize = 0;
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
+            this.BtnCancelar.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnCancelar.Image = global::Checador2.Properties.Resources.icons8_cancelar_50__1_;
+            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnCancelar.Location = new System.Drawing.Point(796, 295);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(117, 80);
+            this.BtnCancelar.TabIndex = 16;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnEliminar.Enabled = false;
+            this.BtnEliminar.FlatAppearance.BorderSize = 0;
+            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminar.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
+            this.BtnEliminar.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnEliminar.Image = global::Checador2.Properties.Resources.icons8_eliminar_propiedad_50;
+            this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnEliminar.Location = new System.Drawing.Point(929, 295);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(106, 80);
+            this.BtnEliminar.TabIndex = 15;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Visible = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // BtnAct
+            // 
+            this.BtnAct.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAct.Enabled = false;
+            this.BtnAct.FlatAppearance.BorderSize = 0;
+            this.BtnAct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAct.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
+            this.BtnAct.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnAct.Image = global::Checador2.Properties.Resources.icons8_guardar_50;
+            this.BtnAct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnAct.Location = new System.Drawing.Point(645, 295);
+            this.BtnAct.Name = "BtnAct";
+            this.BtnAct.Size = new System.Drawing.Size(134, 80);
+            this.BtnAct.TabIndex = 14;
+            this.BtnAct.Text = "Actualizar";
+            this.BtnAct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnAct.UseVisualStyleBackColor = false;
+            this.BtnAct.Visible = false;
+            this.BtnAct.Click += new System.EventHandler(this.BtnAct_Click);
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardar.FlatAppearance.BorderSize = 0;
+            this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuardar.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
+            this.BtnGuardar.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnGuardar.Image = global::Checador2.Properties.Resources.icons8_guardar_50;
+            this.BtnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnGuardar.Location = new System.Drawing.Point(656, 295);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(106, 80);
+            this.BtnGuardar.TabIndex = 13;
+            this.BtnGuardar.Text = "Guardar";
+            this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // Datos
             // 
-            this.Datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Datos.Location = new System.Drawing.Point(146, 421);
+            this.Datos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Datos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.Datos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.Datos.ColumnHeadersHeight = 25;
+            this.Datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Datos.Location = new System.Drawing.Point(59, 421);
             this.Datos.Name = "Datos";
-            this.Datos.Size = new System.Drawing.Size(765, 205);
+            this.Datos.Size = new System.Drawing.Size(976, 205);
             this.Datos.TabIndex = 12;
             this.Datos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Datos_CellDoubleClick);
             // 
             // CmbTp
             // 
             this.CmbTp.FormattingEnabled = true;
-            this.CmbTp.Location = new System.Drawing.Point(655, 244);
+            this.CmbTp.Location = new System.Drawing.Point(788, 238);
             this.CmbTp.Name = "CmbTp";
-            this.CmbTp.Size = new System.Drawing.Size(192, 21);
+            this.CmbTp.Size = new System.Drawing.Size(247, 21);
             this.CmbTp.TabIndex = 11;
             // 
             // label6
@@ -99,7 +197,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.DarkRed;
-            this.label6.Location = new System.Drawing.Point(461, 238);
+            this.label6.Location = new System.Drawing.Point(591, 232);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(188, 27);
             this.label6.TabIndex = 10;
@@ -109,21 +207,21 @@
             // 
             this.TxtRFC.Location = new System.Drawing.Point(246, 136);
             this.TxtRFC.Name = "TxtRFC";
-            this.TxtRFC.Size = new System.Drawing.Size(194, 20);
+            this.TxtRFC.Size = new System.Drawing.Size(291, 20);
             this.TxtRFC.TabIndex = 9;
             // 
             // TxtApeM
             // 
-            this.TxtApeM.Location = new System.Drawing.Point(655, 143);
+            this.TxtApeM.Location = new System.Drawing.Point(785, 137);
             this.TxtApeM.Name = "TxtApeM";
-            this.TxtApeM.Size = new System.Drawing.Size(194, 20);
+            this.TxtApeM.Size = new System.Drawing.Size(250, 20);
             this.TxtApeM.TabIndex = 8;
             // 
             // TxtApeP
             // 
             this.TxtApeP.Location = new System.Drawing.Point(246, 245);
             this.TxtApeP.Name = "TxtApeP";
-            this.TxtApeP.Size = new System.Drawing.Size(194, 20);
+            this.TxtApeP.Size = new System.Drawing.Size(291, 20);
             this.TxtApeP.TabIndex = 7;
             // 
             // label5
@@ -142,7 +240,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(459, 136);
+            this.label4.Location = new System.Drawing.Point(589, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(190, 27);
             this.label4.TabIndex = 5;
@@ -185,102 +283,8 @@
             // 
             this.TxtNombre.Location = new System.Drawing.Point(246, 190);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(194, 20);
+            this.TxtNombre.Size = new System.Drawing.Size(291, 20);
             this.TxtNombre.TabIndex = 0;
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnCancelar.FlatAppearance.BorderSize = 0;
-            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
-            this.BtnCancelar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnCancelar.Image = global::Checador2.Properties.Resources.icons8_cancelar_50__1_;
-            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCancelar.Location = new System.Drawing.Point(733, 301);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(117, 80);
-            this.BtnCancelar.TabIndex = 16;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnCancelar.UseVisualStyleBackColor = false;
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
-            // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnEliminar.Enabled = false;
-            this.BtnEliminar.FlatAppearance.BorderSize = 0;
-            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminar.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
-            this.BtnEliminar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnEliminar.Image = global::Checador2.Properties.Resources.icons8_eliminar_propiedad_50;
-            this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnEliminar.Location = new System.Drawing.Point(866, 301);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(106, 80);
-            this.BtnEliminar.TabIndex = 15;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnEliminar.UseVisualStyleBackColor = false;
-            this.BtnEliminar.Visible = false;
-            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
-            // 
-            // BtnAct
-            // 
-            this.BtnAct.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAct.Enabled = false;
-            this.BtnAct.FlatAppearance.BorderSize = 0;
-            this.BtnAct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAct.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
-            this.BtnAct.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnAct.Image = global::Checador2.Properties.Resources.icons8_guardar_50;
-            this.BtnAct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAct.Location = new System.Drawing.Point(582, 301);
-            this.BtnAct.Name = "BtnAct";
-            this.BtnAct.Size = new System.Drawing.Size(134, 80);
-            this.BtnAct.TabIndex = 14;
-            this.BtnAct.Text = "Actualizar";
-            this.BtnAct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnAct.UseVisualStyleBackColor = false;
-            this.BtnAct.Visible = false;
-            this.BtnAct.Click += new System.EventHandler(this.BtnAct_Click);
-            // 
-            // BtnGuardar
-            // 
-            this.BtnGuardar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnGuardar.FlatAppearance.BorderSize = 0;
-            this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuardar.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
-            this.BtnGuardar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnGuardar.Image = global::Checador2.Properties.Resources.icons8_guardar_50;
-            this.BtnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnGuardar.Location = new System.Drawing.Point(593, 301);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(106, 80);
-            this.BtnGuardar.TabIndex = 13;
-            this.BtnGuardar.Text = "Guardar";
-            this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnGuardar.UseVisualStyleBackColor = false;
-            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.DarkRed;
-            this.label7.Location = new System.Drawing.Point(461, 190);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 27);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Fecha";
-            // 
-            // TxtFecha
-            // 
-            this.TxtFecha.Location = new System.Drawing.Point(658, 196);
-            this.TxtFecha.Name = "TxtFecha";
-            this.TxtFecha.Size = new System.Drawing.Size(200, 20);
-            this.TxtFecha.TabIndex = 18;
             // 
             // RegistroPersonal
             // 

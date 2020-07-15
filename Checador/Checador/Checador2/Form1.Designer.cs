@@ -34,15 +34,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PanelRegistros = new System.Windows.Forms.Panel();
-            this.BtnPersonal = new System.Windows.Forms.Button();
-            this.BtnTp = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gradientPanel2 = new GradientPanelDemo.GradientPanel();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.BtnPersonal = new System.Windows.Forms.Button();
+            this.BtnTp = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.BtnCheck = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.PanelRegistros.SuspendLayout();
@@ -98,6 +98,38 @@
             this.PanelRegistros.Size = new System.Drawing.Size(210, 166);
             this.PanelRegistros.TabIndex = 0;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Gray;
+            this.panel5.Location = new System.Drawing.Point(1, 329);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(18, 71);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Location = new System.Drawing.Point(0, 220);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(18, 71);
+            this.panel3.TabIndex = 0;
+            // 
+            // gradientPanel2
+            // 
+            this.gradientPanel2.ColorBottom = System.Drawing.Color.Empty;
+            this.gradientPanel2.ColorTop = System.Drawing.Color.Empty;
+            this.gradientPanel2.Location = new System.Drawing.Point(245, 0);
+            this.gradientPanel2.Name = "gradientPanel2";
+            this.gradientPanel2.Size = new System.Drawing.Size(1081, 505);
+            this.gradientPanel2.TabIndex = 15;
+            // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.Location = new System.Drawing.Point(246, 42);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(1119, 768);
+            this.PanelContenedor.TabIndex = 15;
+            // 
             // BtnPersonal
             // 
             this.BtnPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -106,7 +138,7 @@
             this.BtnPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPersonal.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPersonal.Image = global::Checador2.Properties.Resources.icons8_marque_todas_las_50;
+            this.BtnPersonal.Image = global::Checador2.Properties.Resources.icons8_añadir_usuario_masculino_50;
             this.BtnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPersonal.Location = new System.Drawing.Point(3, 91);
             this.BtnPersonal.Name = "BtnPersonal";
@@ -125,7 +157,7 @@
             this.BtnTp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.BtnTp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTp.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTp.Image = global::Checador2.Properties.Resources.icons8_marque_todas_las_50;
+            this.BtnTp.Image = global::Checador2.Properties.Resources.icons8_añadir_usuario_masculino_50;
             this.BtnTp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnTp.Location = new System.Drawing.Point(0, 3);
             this.BtnTp.Name = "BtnTp";
@@ -136,14 +168,6 @@
             this.BtnTp.UseVisualStyleBackColor = true;
             this.BtnTp.Click += new System.EventHandler(this.BtnTp_Click);
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Location = new System.Drawing.Point(1, 329);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(18, 71);
-            this.panel5.TabIndex = 1;
-            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
@@ -153,33 +177,16 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::Checador2.Properties.Resources.icons8_marque_todas_las_50;
+            this.button4.Image = global::Checador2.Properties.Resources.icons8_categorizar_50;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(31, 329);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(210, 71);
             this.button4.TabIndex = 12;
-            this.button4.Text = "Registrar";
+            this.button4.Text = "Catalogos";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Location = new System.Drawing.Point(0, 220);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(18, 71);
-            this.panel3.TabIndex = 0;
-            // 
-            // gradientPanel2
-            // 
-            this.gradientPanel2.ColorBottom = System.Drawing.Color.Empty;
-            this.gradientPanel2.ColorTop = System.Drawing.Color.Empty;
-            this.gradientPanel2.Location = new System.Drawing.Point(245, 0);
-            this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(1081, 505);
-            this.gradientPanel2.TabIndex = 15;
             // 
             // BtnCheck
             // 
@@ -209,13 +216,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(246, 172);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
-            // 
-            // PanelContenedor
-            // 
-            this.PanelContenedor.Location = new System.Drawing.Point(246, 42);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1119, 768);
-            this.PanelContenedor.TabIndex = 15;
             // 
             // Form1
             // 
