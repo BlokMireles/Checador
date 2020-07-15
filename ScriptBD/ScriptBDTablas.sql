@@ -8,8 +8,7 @@ TIPOPERSONAL Varchar(50)
 );
 
 create TABLE Personal(
-RFC Varchar(50) AUTO_INCREMENT PRIMARY KEY not null,
-TIPOPERSONAL Varchar(50),
+RFC Varchar(50)  PRIMARY KEY not null,
 NOMBRE  Varchar(50), 
 APELLIDOP Varchar(50), 
 APELLIDOM Varchar(50),
