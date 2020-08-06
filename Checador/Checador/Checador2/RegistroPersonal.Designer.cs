@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TxtFecha = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Datos)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +78,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1120, 768);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // TxtFecha
             // 
@@ -83,6 +86,7 @@
             this.TxtFecha.Name = "TxtFecha";
             this.TxtFecha.Size = new System.Drawing.Size(247, 20);
             this.TxtFecha.TabIndex = 18;
+            this.toolTip1.SetToolTip(this.TxtFecha, "Seleccionar fecha de nacimiento");
             // 
             // label7
             // 
@@ -110,6 +114,7 @@
             this.BtnCancelar.TabIndex = 16;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.BtnCancelar, "Cancelar y limpiar cajas de texto");
             this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
@@ -129,6 +134,7 @@
             this.BtnEliminar.TabIndex = 15;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.BtnEliminar, "eliminar dato guardado");
             this.BtnEliminar.UseVisualStyleBackColor = false;
             this.BtnEliminar.Visible = false;
             this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
@@ -143,12 +149,13 @@
             this.BtnAct.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnAct.Image = global::Checador2.Properties.Resources.icons8_guardar_50;
             this.BtnAct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAct.Location = new System.Drawing.Point(645, 295);
+            this.BtnAct.Location = new System.Drawing.Point(628, 295);
             this.BtnAct.Name = "BtnAct";
             this.BtnAct.Size = new System.Drawing.Size(134, 80);
             this.BtnAct.TabIndex = 14;
             this.BtnAct.Text = "Actualizar";
             this.BtnAct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.BtnAct, "Actualizar los datos guardados");
             this.BtnAct.UseVisualStyleBackColor = false;
             this.BtnAct.Visible = false;
             this.BtnAct.Click += new System.EventHandler(this.BtnAct_Click);
@@ -168,6 +175,7 @@
             this.BtnGuardar.TabIndex = 13;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.BtnGuardar, "guardar datos");
             this.BtnGuardar.UseVisualStyleBackColor = false;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
@@ -182,6 +190,7 @@
             this.Datos.Name = "Datos";
             this.Datos.Size = new System.Drawing.Size(976, 205);
             this.Datos.TabIndex = 12;
+            this.toolTip1.SetToolTip(this.Datos, "Darle doble click al registro que desea actualizar o eliminar");
             this.Datos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Datos_CellDoubleClick);
             // 
             // CmbTp
@@ -191,6 +200,8 @@
             this.CmbTp.Name = "CmbTp";
             this.CmbTp.Size = new System.Drawing.Size(247, 21);
             this.CmbTp.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.CmbTp, "Seleccionar El tipo de personal");
+            this.CmbTp.SelectedIndexChanged += new System.EventHandler(this.CmbTp_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -209,6 +220,7 @@
             this.TxtRFC.Name = "TxtRFC";
             this.TxtRFC.Size = new System.Drawing.Size(291, 20);
             this.TxtRFC.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.TxtRFC, "Escribir el RFC ");
             // 
             // TxtApeM
             // 
@@ -216,6 +228,7 @@
             this.TxtApeM.Name = "TxtApeM";
             this.TxtApeM.Size = new System.Drawing.Size(250, 20);
             this.TxtApeM.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.TxtApeM, "Escribir el Apellido Materno");
             // 
             // TxtApeP
             // 
@@ -223,6 +236,7 @@
             this.TxtApeP.Name = "TxtApeP";
             this.TxtApeP.Size = new System.Drawing.Size(291, 20);
             this.TxtApeP.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.TxtApeP, "Escribir el Apellido Paterno");
             // 
             // label5
             // 
@@ -285,6 +299,7 @@
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(291, 20);
             this.TxtNombre.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.TxtNombre, "Escribir el Nombre");
             // 
             // RegistroPersonal
             // 
@@ -324,5 +339,6 @@
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.DateTimePicker TxtFecha;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

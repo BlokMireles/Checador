@@ -135,5 +135,15 @@ namespace Checador2
             BtnGuardar.Visible = true;
             BtnGuardar.Enabled = true;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void CmbTp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

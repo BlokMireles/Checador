@@ -34,15 +34,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PanelRegistros = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.gradientPanel2 = new GradientPanelDemo.GradientPanel();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.BtnPersonal = new System.Windows.Forms.Button();
             this.BtnTp = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.gradientPanel2 = new GradientPanelDemo.GradientPanel();
             this.BtnCheck = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.PanelRegistros.SuspendLayout();
@@ -91,44 +93,13 @@
             // PanelRegistros
             // 
             this.PanelRegistros.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.PanelRegistros.Controls.Add(this.button1);
             this.PanelRegistros.Controls.Add(this.BtnPersonal);
             this.PanelRegistros.Controls.Add(this.BtnTp);
             this.PanelRegistros.Location = new System.Drawing.Point(31, 400);
             this.PanelRegistros.Name = "PanelRegistros";
-            this.PanelRegistros.Size = new System.Drawing.Size(210, 166);
+            this.PanelRegistros.Size = new System.Drawing.Size(210, 245);
             this.PanelRegistros.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Location = new System.Drawing.Point(1, 329);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(18, 71);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Location = new System.Drawing.Point(0, 220);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(18, 71);
-            this.panel3.TabIndex = 0;
-            // 
-            // gradientPanel2
-            // 
-            this.gradientPanel2.ColorBottom = System.Drawing.Color.Empty;
-            this.gradientPanel2.ColorTop = System.Drawing.Color.Empty;
-            this.gradientPanel2.Location = new System.Drawing.Point(245, 0);
-            this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(1081, 505);
-            this.gradientPanel2.TabIndex = 15;
-            // 
-            // PanelContenedor
-            // 
-            this.PanelContenedor.Location = new System.Drawing.Point(246, 42);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1119, 768);
-            this.PanelContenedor.TabIndex = 15;
             // 
             // BtnPersonal
             // 
@@ -146,6 +117,7 @@
             this.BtnPersonal.TabIndex = 14;
             this.BtnPersonal.Text = "Personal";
             this.BtnPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.BtnPersonal, "Registrar  personal");
             this.BtnPersonal.UseVisualStyleBackColor = true;
             this.BtnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
             // 
@@ -165,8 +137,17 @@
             this.BtnTp.TabIndex = 13;
             this.BtnTp.Text = "Tipo Persona";
             this.BtnTp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.BtnTp, "Registrar un tipo de personal");
             this.BtnTp.UseVisualStyleBackColor = true;
             this.BtnTp.Click += new System.EventHandler(this.BtnTp_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Gray;
+            this.panel5.Location = new System.Drawing.Point(1, 329);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(18, 71);
+            this.panel5.TabIndex = 1;
             // 
             // button4
             // 
@@ -185,8 +166,26 @@
             this.button4.TabIndex = 12;
             this.button4.Text = "Catalogos";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.button4, "Desplegar menu de catalogo");
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Location = new System.Drawing.Point(0, 220);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(18, 71);
+            this.panel3.TabIndex = 0;
+            // 
+            // gradientPanel2
+            // 
+            this.gradientPanel2.ColorBottom = System.Drawing.Color.Empty;
+            this.gradientPanel2.ColorTop = System.Drawing.Color.Empty;
+            this.gradientPanel2.Location = new System.Drawing.Point(245, 0);
+            this.gradientPanel2.Name = "gradientPanel2";
+            this.gradientPanel2.Size = new System.Drawing.Size(1081, 505);
+            this.gradientPanel2.TabIndex = 15;
             // 
             // BtnCheck
             // 
@@ -202,8 +201,9 @@
             this.BtnCheck.Name = "BtnCheck";
             this.BtnCheck.Size = new System.Drawing.Size(210, 71);
             this.BtnCheck.TabIndex = 11;
-            this.BtnCheck.Text = "Check";
+            this.BtnCheck.Text = "Checar";
             this.BtnCheck.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.BtnCheck, "Ir al checador");
             this.BtnCheck.UseVisualStyleBackColor = true;
             this.BtnCheck.Click += new System.EventHandler(this.BtnCheck_Click);
             // 
@@ -216,6 +216,34 @@
             this.pictureBox1.Size = new System.Drawing.Size(246, 172);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.Location = new System.Drawing.Point(246, 42);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(1119, 768);
+            this.PanelContenedor.TabIndex = 15;
+            this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Checador2.Properties.Resources.icons8_añadir_usuario_masculino_50;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 168);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(204, 71);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Horarios";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.button1, "Registrar  personal");
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -255,6 +283,8 @@
         private System.Windows.Forms.Panel PanelRegistros;
         private System.Windows.Forms.Button BtnPersonal;
         private System.Windows.Forms.Button BtnTp;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

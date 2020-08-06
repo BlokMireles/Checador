@@ -12,3 +12,17 @@ C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\LogicaNegocios.C
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\LogicaNegocios.Checador\obj\Debug\LogicaNegocios.Checador.csproj.CopyComplete
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\LogicaNegocios.Checador\obj\Debug\LogicaNegocios.Checador.dll
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\LogicaNegocios.Checador\obj\Debug\LogicaNegocios.Checador.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\LogicaNegocios.Checador.dll
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\LogicaNegocios.Checador.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\AccesoDatos.Checador2.dll
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\Entidades.Checador.dll
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\ConexionBD.dll
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\MySql.Data.dll
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\AccesoDatos.Checador2.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\Entidades.Checador.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\bin\Debug\ConexionBD.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\obj\Debug\LogicaNegocios.Checador.csprojAssemblyReference.cache
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\obj\Debug\LogicaNegocios.Checador.csproj.CoreCompileInputs.cache
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\obj\Debug\LogicaNegocios.Checador.csproj.CopyComplete
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\obj\Debug\LogicaNegocios.Checador.dll
+C:\Users\Mireles\Desktop\Checador\Checador\LogicaNegocios.Checador\obj\Debug\LogicaNegocios.Checador.pdb

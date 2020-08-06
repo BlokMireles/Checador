@@ -10,3 +10,15 @@ C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\AccesoDatos.Chec
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\AccesoDatos.Checador2\obj\Debug\AccesoDatos.Checador.csproj.CopyComplete
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\AccesoDatos.Checador2\obj\Debug\AccesoDatos.Checador2.dll
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\AccesoDatos.Checador2\obj\Debug\AccesoDatos.Checador2.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\bin\Debug\AccesoDatos.Checador2.dll
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\bin\Debug\AccesoDatos.Checador2.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\bin\Debug\ConexionBD.dll
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\bin\Debug\Entidades.Checador.dll
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\bin\Debug\MySql.Data.dll
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\bin\Debug\ConexionBD.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\bin\Debug\Entidades.Checador.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\obj\Debug\AccesoDatos.Checador.csprojAssemblyReference.cache
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\obj\Debug\AccesoDatos.Checador.csproj.CoreCompileInputs.cache
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\obj\Debug\AccesoDatos.Checador.csproj.CopyComplete
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\obj\Debug\AccesoDatos.Checador2.dll
+C:\Users\Mireles\Desktop\Checador\Checador\AccesoDatos.Checador2\obj\Debug\AccesoDatos.Checador2.pdb

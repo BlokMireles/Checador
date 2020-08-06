@@ -92,5 +92,15 @@ namespace Checador2
         {
             AbrirFormEnPanel(new TipoPersonal());
         }
+
+        private void PanelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new HorariosModal());
+        }
     }
 }

@@ -143,6 +143,16 @@ namespace Checador2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_marque_todas_las_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-marque-todas-las-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_minimizar_la_ventana_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-minimizar-la-ventana-50", resourceCulture);

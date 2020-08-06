@@ -4,3 +4,9 @@ C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\Entidades.Checad
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\Entidades.Checador\obj\Debug\Entidades.Checador.csproj.CoreCompileInputs.cache
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\Entidades.Checador\obj\Debug\Entidades.Checador.dll
 C:\Users\Mireles\Desktop\GradientPanel-master\GradientPanelDemo\Entidades.Checador\obj\Debug\Entidades.Checador.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\Entidades.Checador\bin\Debug\Entidades.Checador.dll
+C:\Users\Mireles\Desktop\Checador\Checador\Entidades.Checador\bin\Debug\Entidades.Checador.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\Entidades.Checador\obj\Debug\Entidades.Checador.csprojAssemblyReference.cache
+C:\Users\Mireles\Desktop\Checador\Checador\Entidades.Checador\obj\Debug\Entidades.Checador.csproj.CoreCompileInputs.cache
+C:\Users\Mireles\Desktop\Checador\Checador\Entidades.Checador\obj\Debug\Entidades.Checador.dll
+C:\Users\Mireles\Desktop\Checador\Checador\Entidades.Checador\obj\Debug\Entidades.Checador.pdb

@@ -44,3 +44,4 @@ C:\Users\Mireles\Desktop\Checador\Checador\Checador2\obj\Debug\Checador2.csproj.
 C:\Users\Mireles\Desktop\Checador\Checador\Checador2\obj\Debug\Checador2.csproj.CopyComplete
 C:\Users\Mireles\Desktop\Checador\Checador\Checador2\obj\Debug\Checador2.exe
 C:\Users\Mireles\Desktop\Checador\Checador\Checador2\obj\Debug\Checador2.pdb
+C:\Users\Mireles\Desktop\Checador\Checador\Checador2\obj\Debug\Checador2.HorariosModal.resources

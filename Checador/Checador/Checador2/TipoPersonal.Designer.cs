@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.TxtId = new System.Windows.Forms.TextBox();
@@ -38,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.TxtTpersonal = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Datos)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +76,7 @@
             this.BtnCancelar.TabIndex = 8;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.BtnCancelar, "Cancelar y limpiar cajas de texto");
             this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
@@ -101,6 +104,7 @@
             this.BtnEliminar.TabIndex = 6;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.BtnEliminar, "Eliminar el dato seleccionado");
             this.BtnEliminar.UseVisualStyleBackColor = false;
             this.BtnEliminar.Visible = false;
             this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
@@ -115,12 +119,13 @@
             this.BtnAct.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnAct.Image = global::Checador2.Properties.Resources.icons8_guardar_50;
             this.BtnAct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAct.Location = new System.Drawing.Point(286, 265);
+            this.BtnAct.Location = new System.Drawing.Point(269, 265);
             this.BtnAct.Name = "BtnAct";
             this.BtnAct.Size = new System.Drawing.Size(134, 80);
             this.BtnAct.TabIndex = 5;
             this.BtnAct.Text = "Actualizar";
             this.BtnAct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.BtnAct, "Actualizar los datos guardados");
             this.BtnAct.UseVisualStyleBackColor = false;
             this.BtnAct.Visible = false;
             this.BtnAct.Click += new System.EventHandler(this.BtnAct_Click);
@@ -135,6 +140,7 @@
             this.Datos.Name = "Datos";
             this.Datos.Size = new System.Drawing.Size(457, 284);
             this.Datos.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.Datos, "Darle doble click al registro que desea actualizar o eliminar");
             this.Datos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Datos_CellContentClick);
             this.Datos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Datos_CellDoubleClick);
             // 
@@ -175,6 +181,7 @@
             this.BtnGuardar.TabIndex = 1;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.BtnGuardar, "guardar los datos ");
             this.BtnGuardar.UseVisualStyleBackColor = false;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
@@ -184,6 +191,7 @@
             this.TxtTpersonal.Name = "TxtTpersonal";
             this.TxtTpersonal.Size = new System.Drawing.Size(239, 20);
             this.TxtTpersonal.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.TxtTpersonal, "Escribir el Tipo de personal");
             // 
             // TipoPersonal
             // 
@@ -215,5 +223,6 @@
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnAct;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

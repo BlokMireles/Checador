@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChecadorManejador.cs" />
+    <Compile Include="HorariosManejador.cs" />
+    <Compile Include="KardexManejador.cs" />
     <Compile Include="PersonalManejador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoPersonalManejador.cs" />
